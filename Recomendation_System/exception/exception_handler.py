@@ -10,7 +10,7 @@ class AppException(Exception):
     
     """
 
-    def __init__(self, error_message: Exception, error_detail: sys):
+    def __init__(self, error_message: Exception, error_detail):
         """
         :param error_message: error message in string format
         """
@@ -18,7 +18,7 @@ class AppException(Exception):
         self.error_message = AppException.error_message_detail(error_message, error_detail=error_detail)
 
     @staticmethod
-    def error_message_detail(error:Exception, error_detail:sys):
+    def error_message_detail(error: Exception, error_detail):
         """
         error: Exception object raise from module
         error_detail: is sys module contains detail information about system execution information.

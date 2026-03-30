@@ -1,6 +1,4 @@
-def main():
-    print("Hello from biblioengine-a-recomendation-system!")
+from Recomendation_System.pipeline.training_pipeline import TrainingPipeline
 
-
-if __name__ == "__main__":
-    main()
+obj=TrainingPipeline()
+obj.start_training_pipeline()
