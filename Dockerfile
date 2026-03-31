@@ -1,4 +1,4 @@
-FROM python:3.10-slim-bookworm
+FROM python:3.12-slim-bookworm
 
 EXPOSE 8501
 
@@ -10,8 +10,9 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-COPY . /app
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-RUN pip3 install -r requirements.txt
+COPY . /app
 
 ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
