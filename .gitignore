@@ -54,3 +54,8 @@ docker-compose.override.yml
 # ─── Misc ───
 *.pkl
 *.zip
+
+# ─── Professional README ───
+README_PROFESSIONAL.md
+
+
