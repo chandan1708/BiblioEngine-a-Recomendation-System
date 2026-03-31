@@ -55,7 +55,7 @@ docker-compose.override.yml
 *.pkl
 *.zip
 
-# ─── Professional README ───
+# ─── developer README ───
 README_PROFESSIONAL.md
 
 

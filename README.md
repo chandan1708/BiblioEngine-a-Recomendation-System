@@ -127,7 +127,7 @@ docker run -d -p 8501:8501 --name biblioengine_app biblioengine:latest
    docker build -t biblioengine:latest .
    docker run -d -p 8501:8501 biblioengine:latest
    ```
-4. Access the live app via your EC2 Public IP: `http://13.217.111.62:8501/`
+4. Access the live app via your EC2 Public IP: <a href="http://13.217.111.62:8501/">http://13.217.111.62:8501/</a></p>
 
 ---
 <div align="center">
