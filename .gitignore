@@ -1,12 +1,56 @@
-.venv
+# ─── Virtual Environments ───
+.venv/
+venv/
+env/
 
-notebook/artifacts
-artifacts/*
-logs/*
-__pycache__/*
+# ─── Python Cache ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ─── Distribution / Packaging ───
+*.egg-info/
+*.egg
+dist/
+build/
+sdist/
+
+# ─── Artifacts & Model Outputs ───
+artifacts/
+logs/
+notebook/artifacts/
+
+# ─── Environment Variables ───
 .env
-.env.example
-.env.prod
-.env.dev
-.env.test
-.env.local
+.env.*
+
+# ─── IDE / Editor ───
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ─── AWS ───
+.aws/
+*.pem
+*.ppk
+.elasticbeanstalk/
+.ebextensions/*.bak
+aws-exports.js
+samconfig.toml
+packaged.yaml
+cdk.out/
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+
+# ─── Docker ───
+docker-compose.override.yml
+
+# ─── Misc ───
+*.pkl
+*.zip
