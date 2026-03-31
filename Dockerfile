@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY requirements.txt setup.py pyproject.toml ./
+COPY Recomendation_System/__init__.py Recomendation_System/__init__.py
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . /app
